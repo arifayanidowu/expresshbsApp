@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "start": "node ./bin/www -e=js,hbs",
-        "dev-server": "nodemon ./bin/www --e=js,hbs --watch"
+        "dev-server": "nodemon ./bin/www -e js,hbs --watch"
     },
     "dependencies": {
         "cookie-parser": "~1.4.3",
