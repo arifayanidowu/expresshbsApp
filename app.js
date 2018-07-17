@@ -13,10 +13,12 @@ let engineeringRouter = require('./routes/engineering');
 let consultingRouter = require('./routes/consulting');
 let installationRouter = require('./routes/installation');
 let constructionRouter = require('./routes/construction');
-let industriesRouter = require('./routes/industries');
 let careersRouter = require('./routes/careers');
 let contactRouter = require('./routes/contact');
 let submitrfqsRouter = require('./routes/submitrfqs');
+let oilGasRouter = require('./routes/oil-gas');
+let foodBeveragesRouter = require('./routes/food-beverages');
+let powerRouter = require('./routes/power');
 
 var app = express();
 
@@ -42,12 +44,13 @@ app.use('/procurement', procurementRouter);
 app.use('/engineering', engineeringRouter);
 app.use('/consulting', consultingRouter);
 app.use('/construction', constructionRouter);
-app.use('/industries', industriesRouter);
 app.use('/installation', installationRouter);
 app.use('/careers', careersRouter);
 app.use('/contact', contactRouter);
 app.use('/submitrfqs', submitrfqsRouter);
-
+app.use('/oil-gas', oilGasRouter);
+app.use('/food-beverages', foodBeveragesRouter);
+app.use('/power', powerRouter);
 // ---->
 
 // catch 404 and forward to error handler
