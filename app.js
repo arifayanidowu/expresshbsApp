@@ -5,20 +5,20 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 let hbs = require('hbs');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-let aboutRouter = require('./routes/about');
-let procurementRouter = require('./routes/procurement');
-let engineeringRouter = require('./routes/engineering');
-let consultingRouter = require('./routes/consulting');
-let installationRouter = require('./routes/installation');
-let constructionRouter = require('./routes/construction');
-let careersRouter = require('./routes/careers');
-let contactRouter = require('./routes/contact');
-let submitrfqsRouter = require('./routes/submitrfqs');
-let oilGasRouter = require('./routes/oil-gas');
-let foodBeveragesRouter = require('./routes/food-beverages');
-let powerRouter = require('./routes/power');
+const indexRouter = require('./routes/index');
+const usersRouter = require('./routes/users');
+const aboutRouter = require('./routes/about');
+const procurementRouter = require('./routes/procurement');
+const engineeringRouter = require('./routes/engineering');
+const consultingRouter = require('./routes/consulting');
+const installationRouter = require('./routes/installation');
+const constructionRouter = require('./routes/construction');
+const careersRouter = require('./routes/careers');
+const contactRouter = require('./routes/contact');
+const submitrfqsRouter = require('./routes/submitrfqs');
+const oilGasRouter = require('./routes/oil-gas');
+const foodBeveragesRouter = require('./routes/food-beverages');
+const powerRouter = require('./routes/power');
 
 var app = express();
 
